@@ -1,6 +1,7 @@
 #include <stdio.h>
 int main(){
-    float f1,f2;
+    printf("Enter a charcter:");
+    scanf("%c",ch);
+    printf("ASCII value of %c is : %d\n",ch,ch);
     return 0;
-    
 }

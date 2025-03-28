@@ -13,8 +13,8 @@ int main() {
         for (j = 1; j <= i; j++) {
             printf("*");
         }
+    }
         // Move to the next line after each row
         printf("\n");
-    }
 }
 return 0;

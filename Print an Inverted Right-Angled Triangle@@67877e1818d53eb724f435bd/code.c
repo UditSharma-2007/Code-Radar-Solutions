@@ -1,28 +1,30 @@
+// #include <stdio.h>
+// int main(){
+//     int n;
+//     scanf("%d",&n);
+//     for(int i=n;i>0=n;i++){
+        
+//     }
+// }
+
+
 #include <stdio.h>
 
-void printInvertedTriangle(int n) {
-    // Outer loop for rows, N se 1 tak
-    for (int i = n; i >= 1; i--) {
-        // Inner loop for printing stars in each row
-        for (int j = 1; j <= i; j++) {
-            printf("*");
+void printTriangle(int N) {
+    for (int i = N; i > 0; i--) {  // Loop for rows
+        for (int j = 0; j < i; j++) {  // Loop for printing stars
+            printf("* ");
         }
-        // New line after each row
-        printf("\n");
+        printf("\n");  // Move to the next line
     }
 }
 
 int main() {
-    int n;
-    printf("Enter the number of rows (N): ");
-    scanf("%d", &n);
+    int N;
+    printf("Enter the number of rows: ");
+    scanf("%d", &N);
     
-    // Agar n negative ya zero hai toh invalid input
-    if (n <= 0) {
-        printf("Please enter a positive number.\n");
-    } else {
-        printInvertedTriangle(n);
-    }
-    
+    printTriangle(N);
+
     return 0;
 }

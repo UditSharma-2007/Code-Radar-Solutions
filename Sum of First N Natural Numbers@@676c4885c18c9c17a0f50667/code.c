@@ -6,6 +6,6 @@ int main(){
         sum+=1;
      
     }
-       printf("%d",&a);
+       printf("%d",sum);
        return 0;
 }

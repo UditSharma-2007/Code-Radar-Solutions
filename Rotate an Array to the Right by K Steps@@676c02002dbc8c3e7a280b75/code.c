@@ -22,7 +22,7 @@ int main(){
         for(int i=n-j;i<n;i++){
             printf("%d",&arr[i]);
         }
-        for(int i=n-j;i<n,i++){
+        
 
         }
         for(int i=0;i<n-j;i++){
